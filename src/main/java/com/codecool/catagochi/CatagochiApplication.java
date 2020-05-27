@@ -1,6 +1,7 @@
 package com.codecool.catagochi;
 
 import com.codecool.catagochi.data.CatStorage;
+import com.codecool.catagochi.model.Cat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,9 @@ public class CatagochiApplication {
 
     @PostConstruct
     public void afterInit() {
-        LOGGER.info(catStorage.getAllCats().toString());
+        LOGGER.info(catStorage.getCats().toString());
+        LOGGER.info(catStorage.toString());
+
     }
 
 }
