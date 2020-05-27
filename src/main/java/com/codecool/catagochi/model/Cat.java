@@ -25,20 +25,6 @@ public class Cat{
 
     public void setHungry(boolean val) {this.isHungry = val;}
 
-    // custom toString
-    @Override
-    public String toString() {
-        return "{" +
-                "id:" + id +
-                ", name:" + name +
-                ", gender:" + gender +
-                ", image:" + img +
-                ", isHungry:" + isHungry +
-                ", isThirsty:" + isThirsty +
-                ", hasPood: " + hasPood +
-                '}';
-    }
-
     // Constructors
     public Cat(int id, String name, Gender gender, String img) {
         this.id = id;
