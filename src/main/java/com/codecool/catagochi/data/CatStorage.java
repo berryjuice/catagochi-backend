@@ -1,22 +1,22 @@
-package com.codecool.catagochi.service;
+package com.codecool.catagochi.data;
 
 import com.codecool.catagochi.model.Cat;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
-@Component
-public class CatCreator {
-    private List<Cat> allCats = new LinkedList<>();
-    private List<Cat> generateCats() {
+@Service
+public class CatStorage {
+    private List<Cat> allCats = new ArrayList<>();
+
+    private void generateCats() {
         allCats.add(new Cat(0, "Jonesy", "male"));
         allCats.add(new Cat(1, "Schrödinger", "male"));
         allCats.add(new Cat(2, "Ópamacs", "male"));
-        return allCats;
     }
 
-    public CatCreator() {
+    public CatStorage() {
         generateCats();
     }
 

@@ -1,8 +1,23 @@
 package com.codecool.catagochi.model;
 
+import org.springframework.context.annotation.Bean;
+
 public class Cat{
    private int id;
-   private String name;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    private String name;
    private String gender;
 
     @Override
