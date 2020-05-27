@@ -25,6 +25,6 @@ public class CatController {
         return catStorage.getAllCats().stream()
                 .filter(c -> c.getName().equals(name))
                 .findFirst()
-                .orElseThrow(()->new Exception("Cat not found with name: "+name));
+                .orElseThrow(()->new Exception("You have not adopted any cat with name: "+name));
     }
 }
