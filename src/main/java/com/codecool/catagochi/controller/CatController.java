@@ -6,8 +6,6 @@ import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 public class CatController {
     Gson gson = new Gson();
@@ -28,4 +26,32 @@ public class CatController {
                 .orElseThrow(()->new Exception("You have not adopted any cat with id: "+id));
         return gson.toJson(cat);
     }
+
+    @GetMapping("/my-cats/{id}/give-food")
+    public void giveFood(@PathVariable("id") int id) throws Exception {
+        Cat cat = catStorage.getCats().stream()
+                .filter(c -> c.getId()==id)
+                .findFirst()
+                .orElseThrow(()->new Exception("You have not adopted any cat with id: "+id));
+        cat.setHungry(false);
+    }
+
+    @GetMapping("/my-cats/{id}/give-water")
+    public void giveWater(@PathVariable("id") int id) throws Exception {
+        Cat cat = catStorage.getCats().stream()
+                .filter(c -> c.getId()==id)
+                .findFirst()
+                .orElseThrow(()->new Exception("You have not adopted any cat with id: "+id));
+        cat.setThirsty(false);
+    }
+
+    @GetMapping("/my-cats/{id}/clean-litterbox")
+    public void cleanLitterbox(@PathVariable("id") int id) throws Exception {
+        Cat cat = catStorage.getCats().stream()
+                .filter(c -> c.getId()==id)
+                .findFirst()
+                .orElseThrow(()->new Exception("You have not adopted any cat with id: "+id));
+        cat.setLitterboxClean(true);
+    }
 }
+
