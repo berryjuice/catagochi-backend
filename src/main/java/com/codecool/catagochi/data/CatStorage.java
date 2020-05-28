@@ -4,13 +4,12 @@ import com.codecool.catagochi.model.Cat;
 import com.codecool.catagochi.model.Gender;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 @Service
 public class CatStorage {
-    private List<Cat> cats = new ArrayList<>();
+    private Set<Cat> cats = new HashSet<>();
 
     private void generateCats() {
         cats.add(new Cat(0, "Jonesy", Gender.MALE,  "https://d2ph5fj80uercy.cloudfront.net/04/cat2972.jpg"));
@@ -23,7 +22,7 @@ public class CatStorage {
         generateCats();
     }
 
-    public List<Cat> getCats() {
+    public Set<Cat> getCats() {
         return cats;
     }
 
