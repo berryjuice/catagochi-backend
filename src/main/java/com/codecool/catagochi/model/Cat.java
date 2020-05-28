@@ -10,7 +10,7 @@ public class Cat{
     // Working fields
     private boolean isHungry;
     private boolean isThirsty;
-    private boolean hasPood;
+    private boolean isLitterboxClean;
 
     // Getters
     public int getId() {return id;}
@@ -19,11 +19,13 @@ public class Cat{
     public String getImg() {return img;}
     public boolean isHungry() {return isHungry;}
     public boolean isThirsty() {return isThirsty;}
-    public boolean isHasPood() {return hasPood;}
+    public boolean isLitterboxClean() {return isLitterboxClean;}
 
     // Setters
 
     public void setHungry(boolean val) {this.isHungry = val;}
+    public void setThirsty(boolean val) {this.isThirsty = val;}
+    public void setLitterboxClean(boolean val) {this.isLitterboxClean = val;}
 
     // Constructors
     public Cat(int id, String name, Gender gender, String img) {
@@ -33,7 +35,7 @@ public class Cat{
         this.img = img;
         this.isHungry = true;
         this.isThirsty = true;
-        this.hasPood = false;
+        this.isLitterboxClean = false;
     }
     public Cat() {}
 }
