@@ -29,6 +29,11 @@ public class CatService {
         Cat cat = findCatById(id);
         cat.setHungry(false);
         return cat;
+    }
 
+    public Cat renameCatById(int id, String newName) throws Exception {
+        Cat cat = findCatById(id);
+        cat.setName(newName);
+        return cat;
     }
 }

@@ -1,10 +1,7 @@
 package com.codecool.catagochi.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 @Component
 @EnableScheduling
@@ -32,10 +29,10 @@ public class Cat{
     public boolean getIsLitterboxClean() {return isLitterboxClean;}
 
     // Setters
-
     public void setHungry(boolean val) {this.isHungry = val;}
     public void setThirsty(boolean val) {this.isThirsty = val;}
     public void setLitterboxClean(boolean val) {this.isLitterboxClean = val;}
+    public void setName(String name) { this.name = name;}
 
     // Constructors
     public Cat(int id, String name, Gender gender, Age age, String img) {
@@ -49,5 +46,4 @@ public class Cat{
         this.isLitterboxClean = false;
     }
     public Cat() {}
-
 }
