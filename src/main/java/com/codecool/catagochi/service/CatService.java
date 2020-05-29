@@ -18,19 +18,17 @@ public class CatService {
         cat.setLitterboxClean(false);
     }
 
-    public void giveFood(int id) throws Exception {
-        Cat foundCat = catStorage.getCats().stream()
-                .filter(c -> c.getId()==id)
-                .findFirst()
-                .orElseThrow(() -> new Exception("You have not adopted any cat with id: "+id));
-
-        foundCat.setHungry(false);
-    }
-
-    public Cat getCatDetails(int id) throws Exception {
+    public Cat findCatById(int id) throws Exception {
         return catStorage.getCats().stream()
-                .filter(c -> c.getId()==id)
+                .filter(c->c.getId()==id)
                 .findFirst()
                 .orElseThrow(()->new Exception("You have not adopted any cat with id: "+id));
+    }
+
+    public Cat giveFood(int id) throws Exception {
+        Cat cat = findCatById(id);
+        cat.setHungry(false);
+        return cat;
+
     }
 }

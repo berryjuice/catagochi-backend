@@ -25,12 +25,12 @@ public class CatController {
 
     @GetMapping("/my-cats/{id}")
     public Cat catDetails(@PathVariable("id") int id) throws Exception {
-        return catService.getCatDetails(id);
+        return catService.findCatById(id);
     }
 
     @GetMapping("/my-cats/{id}/give-food")
-    public void giveFood(@PathVariable("id") int id) throws Exception {
-        catService.giveFood(id);
+    public Cat giveFood(@PathVariable("id") int id) throws Exception {
+        return catService.giveFood(id);
     }
 }
 
