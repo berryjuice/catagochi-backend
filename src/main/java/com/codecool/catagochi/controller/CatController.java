@@ -20,11 +20,11 @@ public class CatController {
 
     @GetMapping("/my-cats")
     public String catList() {
-        return gson.toJson(catStorage);
+        return gson.toJson(catStorage.getAllCats());
     }
 
     @GetMapping("/my-cats/{id}")
-    public Cat catDetails(@PathVariable("id") int id) throws Exception {
+    public Cat getCatDetails(@PathVariable("id") int id) throws Exception {
         return catService.findCatById(id);
     }
 

@@ -27,7 +27,7 @@ public class CatagochiApplication {
 
     @Scheduled(cron="0 0 0 * * *")
     public void resetProperties() {
-        for (Cat cat : catStorage.getCats()) {
+        for (Cat cat : catStorage.getAllCats()) {
             catService.resetProperties(cat);
         }
     }
@@ -38,7 +38,7 @@ public class CatagochiApplication {
 
     @PostConstruct
     public void afterInit() {
-        LOGGER.info(catStorage.getCats().toString());
+        LOGGER.info(catStorage.getAllCats().toString());
         LOGGER.info(catStorage.toString());
 
     }

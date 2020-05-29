@@ -19,7 +19,7 @@ public class CatService {
     }
 
     public Cat findCatById(int id) throws Exception {
-        return catStorage.getCats().stream()
+        return catStorage.getAllCats().stream()
                 .filter(c->c.getId()==id)
                 .findFirst()
                 .orElseThrow(()->new Exception("You have not adopted any cat with id: "+id));
