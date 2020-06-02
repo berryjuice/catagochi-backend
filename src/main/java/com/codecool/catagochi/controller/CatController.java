@@ -3,14 +3,14 @@ package com.codecool.catagochi.controller;
 import com.codecool.catagochi.model.Cat;
 import com.codecool.catagochi.data.CatStorage;
 import com.codecool.catagochi.service.CatService;
-import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @CrossOrigin
 public class CatController {
-    Gson gson = new Gson();
 
     @Autowired
     private CatStorage catStorage;
@@ -19,8 +19,8 @@ public class CatController {
     private CatService catService;
 
     @GetMapping("/my-cats")
-    public String catList() {
-        return gson.toJson(catStorage.getAllCats());
+    public List<Cat> catList() {
+        return catStorage.getAllCats();
     }
 
     @GetMapping("/my-cats/{id}")

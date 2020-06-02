@@ -26,5 +26,4 @@ public class CatStorage {
     public ArrayList<Cat> getAllCats() {
         return cats;
     }
-
 }
