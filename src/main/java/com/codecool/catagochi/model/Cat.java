@@ -1,5 +1,6 @@
 package com.codecool.catagochi.model;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,10 +10,10 @@ import org.springframework.stereotype.Component;
 @Getter @Setter @NoArgsConstructor
 public class Cat {
     // Basic Fields
-    private int id;
+    private @Setter(AccessLevel.PRIVATE) int id;
     private String name;
-    private Gender gender;
-    private Age age;
+    private @Setter(AccessLevel.PRIVATE) Gender gender;
+    private @Setter(AccessLevel.PRIVATE) Age age;
     private String img;
 
     // Working fields
