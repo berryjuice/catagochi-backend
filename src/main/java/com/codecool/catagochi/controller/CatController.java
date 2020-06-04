@@ -23,14 +23,31 @@ public class CatController {
         return catStorage.getAllCats();
     }
 
+
     @GetMapping("/my-cats/{id}")
     public Cat getCatDetails(@PathVariable("id") int id) throws Exception {
         return catService.findCatById(id);
     }
 
+
     @GetMapping("/my-cats/{id}/give-food")
     public Cat giveFood(@PathVariable("id") int id) throws Exception {
         return catService.giveFood(id);
+    }
+
+    @GetMapping("/my-cats/{id}/give-drink")
+    public Cat giveDrink(@PathVariable("id") int id) throws Exception {
+        return catService.giveDrink(id);
+    }
+
+    @GetMapping("/my-cats/{id}/clean-litterbox")
+    public Cat cleanLitterBox(@PathVariable("id") int id) throws Exception {
+        return catService.cleanLitterBox(id);
+    }
+
+    @PostMapping("/my-cats/{id}/rename")
+    public Cat renameCatById(@PathVariable("id") int id, @RequestBody String newName) throws Exception {
+        return catService.renameCatById(id, newName);
     }
 }
 

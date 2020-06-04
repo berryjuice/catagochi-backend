@@ -15,7 +15,7 @@ public class CatService {
     public void resetProperties(Cat cat) {
         cat.setHungry(true);
         cat.setThirsty(true);
-        cat.setLitterboxClean(false);
+        cat.setLitterBoxClean(false);
     }
 
     public Cat findCatById(int id) throws Exception {
@@ -34,6 +34,18 @@ public class CatService {
     public Cat renameCatById(int id, String newName) throws Exception {
         Cat cat = findCatById(id);
         cat.setName(newName);
+        return cat;
+    }
+
+    public Cat giveDrink(int id) throws Exception {
+        Cat cat = findCatById(id);
+        cat.setThirsty(false);
+        return cat;
+    }
+
+    public Cat cleanLitterBox(int id) throws Exception {
+        Cat cat = findCatById(id);
+        cat.setLitterBoxClean(true);
         return cat;
     }
 }
