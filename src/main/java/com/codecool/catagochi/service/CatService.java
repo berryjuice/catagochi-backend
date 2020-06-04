@@ -25,6 +25,14 @@ public class CatService {
                 .orElseThrow(()->new Exception("You have not adopted any cat with id: "+ id));
     }
 
+    public Cat findCatByName(String name) throws Exception {
+        return catStorage.getAllCats().stream()
+                .filter(c -> c.getName().equals(name))
+                .findFirst()
+                //.orElseThrow(()->new Exception("You do not have any cat with name: "+ name));
+                .orElse(null);
+    }
+
     public Cat giveFood(int id) throws Exception {
         Cat cat = findCatById(id);
         cat.setHungry(false);
@@ -32,9 +40,13 @@ public class CatService {
     }
 
     public Cat renameCatById(int id, String newName) throws Exception {
-        Cat cat = findCatById(id);
-        cat.setName(newName);
-        return cat;
+        Cat catByName = findCatByName(newName);
+        if (catByName == null) {
+            Cat catById = findCatById(id);
+            catById.setName(newName);
+            return catById;
+        }
+        else return null;
     }
 
     public Cat giveDrink(int id) throws Exception {
