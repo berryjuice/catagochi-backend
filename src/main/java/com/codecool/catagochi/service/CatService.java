@@ -41,12 +41,13 @@ public class CatService {
 
     public Cat renameCatById(int id, String newName) throws Exception {
         Cat catByName = findCatByName(newName);
+        Cat catById = findCatById(id);
         if (catByName == null) {
-            Cat catById = findCatById(id);
             catById.setName(newName);
-            return catById;
+            //return catById;
         }
-        else return null;
+        return catById;
+        //return null;
     }
 
     public Cat giveDrink(int id) throws Exception {
