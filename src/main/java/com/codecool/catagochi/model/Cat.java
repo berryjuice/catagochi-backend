@@ -18,6 +18,7 @@ public class Cat {
     private boolean isHungry = true;
     private boolean isThirsty = true;
     private boolean isLitterBoxClean = true;
+    private boolean isAdopted = false;
 
     // Constructor
     public Cat(String name, Gender gender, Age age, String img) {

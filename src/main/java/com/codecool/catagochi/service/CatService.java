@@ -2,6 +2,7 @@ package com.codecool.catagochi.service;
 
 import com.codecool.catagochi.model.Cat;
 import com.codecool.catagochi.data.CatStorage;
+import com.sun.istack.internal.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,43 +23,61 @@ public class CatService {
         return catStorage.getAllCats().stream()
                 .filter(c -> c.getId() == id)
                 .findFirst()
+                .orElseThrow(()->new Exception("There is no cat with id: "+ id));
+    }
+
+    public Cat findMyCatById(int id) throws Exception {
+        return catStorage.getMyCats().stream()
+                .filter(c -> c.getId() == id)
+                .findFirst()
                 .orElseThrow(()->new Exception("You have not adopted any cat with id: "+ id));
     }
 
-    public Cat findCatByName(String name) throws Exception {
-        return catStorage.getAllCats().stream()
+    public Cat findCatByName(String name) {
+        return catStorage.getMyCats().stream()
                 .filter(c -> c.getName().equals(name))
                 .findFirst()
-                //.orElseThrow(()->new Exception("You do not have any cat with name: "+ name));
                 .orElse(null);
     }
 
-    public Cat giveFood(int id) throws Exception {
-        Cat cat = findCatById(id);
-        cat.setHungry(false);
+    public Cat changeState(int id, String state) throws Exception {
+        Cat cat = findMyCatById(id);
+        switch(state) {
+            case "food":
+                cat.setHungry(false);
+                break;
+            case "drink":
+                cat.setThirsty(false);
+                break;
+            case "litterbox":
+                cat.setLitterBoxClean(true);
+                break;
+            default:
+        }
         return cat;
     }
 
     public Cat renameCatById(int id, String newName) throws Exception {
+        Cat catById = findMyCatById(id);
         Cat catByName = findCatByName(newName);
-        Cat catById = findCatById(id);
+        if (catById == null) {
+            throw new Exception("You do not have a cat with id: " + id);
+        }
         if (catByName == null) {
             catById.setName(newName);
-            //return catById;
+            return catById;
         }
-        return catById;
-        //return null;
+        else throw new Exception("You already have a cat with name: " + newName);
     }
 
-    public Cat giveDrink(int id) throws Exception {
+    public Cat adopt(int id) throws Exception {
         Cat cat = findCatById(id);
-        cat.setThirsty(false);
-        return cat;
-    }
-
-    public Cat cleanLitterBox(int id) throws Exception {
-        Cat cat = findCatById(id);
-        cat.setLitterBoxClean(true);
-        return cat;
+        if (cat == null) {
+            throw new Exception("There is no cat with id: " + id);
+        }
+        else {
+            cat.setAdopted(true);
+            return cat;
+        }
     }
 }

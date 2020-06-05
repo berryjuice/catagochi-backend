@@ -6,6 +6,8 @@ import com.codecool.catagochi.model.Gender;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class CatStorage {
@@ -21,5 +23,15 @@ public class CatStorage {
 
     public CatStorage() {generateCats();}
 
-    public ArrayList<Cat> getAllCats() {return cats;}
+    public List<Cat> getAllCats() {
+        return cats.stream()
+                .filter(c -> c.isAdopted() == false)
+                .collect(Collectors.toList());
+    }
+
+    public List<Cat> getMyCats() {
+        return cats.stream()
+                .filter(c -> c.isAdopted() == true)
+                .collect(Collectors.toList());
+    }
 }
