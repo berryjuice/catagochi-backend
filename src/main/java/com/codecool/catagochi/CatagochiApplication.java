@@ -1,7 +1,7 @@
 package com.codecool.catagochi;
 
 import com.codecool.catagochi.data.CatStorage;
-import com.codecool.catagochi.model.Cat;
+import com.codecool.catagochi.entity.Cat;
 import com.codecool.catagochi.service.CatService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

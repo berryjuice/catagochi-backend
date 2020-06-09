@@ -1,7 +1,7 @@
 package com.codecool.catagochi.data;
 
 import com.codecool.catagochi.model.Age;
-import com.codecool.catagochi.model.Cat;
+import com.codecool.catagochi.entity.Cat;
 import com.codecool.catagochi.model.Gender;
 import org.springframework.stereotype.Service;
 

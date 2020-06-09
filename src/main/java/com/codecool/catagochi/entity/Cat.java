@@ -1,14 +1,25 @@
-package com.codecool.catagochi.model;
+package com.codecool.catagochi.entity;
 
+import com.codecool.catagochi.model.Age;
+import com.codecool.catagochi.model.Gender;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
-@Component
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+//@Component
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
 public class Cat {
-    // Basic Fields
-    private static int catCounter = 0;
-    private @Setter(AccessLevel.PRIVATE) int id = catCounter++;
+    @Id
+    @GeneratedValue
+    private Long id;
+
     private String name;
     private @Setter(AccessLevel.PRIVATE) Gender gender;
     private @Setter(AccessLevel.PRIVATE) Age age;

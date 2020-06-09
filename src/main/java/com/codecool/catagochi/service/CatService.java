@@ -1,8 +1,7 @@
 package com.codecool.catagochi.service;
 
-import com.codecool.catagochi.model.Cat;
+import com.codecool.catagochi.entity.Cat;
 import com.codecool.catagochi.data.CatStorage;
-import com.sun.istack.internal.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
