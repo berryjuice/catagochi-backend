@@ -1,46 +1,66 @@
 package com.codecool.catagochi;
 
-import com.codecool.catagochi.data.CatStorage;
-import com.codecool.catagochi.model.Cat;
-import com.codecool.catagochi.service.CatService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.codecool.catagochi.entity.Cat;
+import com.codecool.catagochi.model.Age;
+import com.codecool.catagochi.model.Gender;
+import com.codecool.catagochi.repository.CatRepository;
+import com.codecool.catagochi.service.CatServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
-
-import javax.annotation.PostConstruct;
 
 @SpringBootApplication
 @EnableScheduling
 public class CatagochiApplication {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CatagochiApplication.class);
+    @Autowired
+    private CatRepository catRepository;
 
     @Autowired
-    private CatStorage catStorage;
+    private CatServiceImpl catServiceImpl;
 
-    @Autowired
-    private CatService catService;
-
-    @Scheduled(cron="0 0 0 * * *")
-    public void resetProperties() {
-        for (Cat cat : catStorage.getAllCats()) {
-            catService.resetProperties(cat);
-        }
-    }
+//    @Scheduled(cron="0 0 0 * * *")
+//    public void resetProperties() {
+//        for (Cat cat : catStorage.getAllCats()) {
+//            catServiceImpl.resetProperties(cat);
+//        }
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(CatagochiApplication.class, args);
     }
 
-    @PostConstruct
-    public void afterInit() {
-        LOGGER.info(catStorage.getAllCats().toString());
-        LOGGER.info(catStorage.toString());
+    @Bean
+    @Profile("production")
+    public CommandLineRunner init() {
+        return args -> {
+            Cat cat = Cat.builder()
+                    .name("Jonesy")
+                    .gender(Gender.MALE)
+                    .age(Age.ADULT)
+                    .img("image")
+                    .build();
+            catServiceImpl.saveOrUpdate(cat);
 
+            Cat cat2 = Cat.builder()
+                    .name("Maszat")
+                    .gender(Gender.MALE)
+                    .age(Age.ADULT)
+                    .img("image")
+                    .build();
+            catServiceImpl.saveOrUpdate(cat2);
+
+            Cat cat3 = Cat.builder()
+                    .name("Guri")
+                    .gender(Gender.MALE)
+                    .age(Age.ADULT)
+                    .img("image")
+                    .build();
+            catServiceImpl.saveOrUpdate(cat3);
+        };
     }
-
 }

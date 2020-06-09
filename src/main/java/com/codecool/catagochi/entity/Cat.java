@@ -1,30 +1,42 @@
-package com.codecool.catagochi.model;
+package com.codecool.catagochi.entity;
 
+import com.codecool.catagochi.model.Age;
+import com.codecool.catagochi.model.Gender;
 import lombok.*;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 @Component
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
 public class Cat {
-    // Basic Fields
-    private static int catCounter = 0;
-    private @Setter(AccessLevel.PRIVATE) int id = catCounter++;
+    @Id
+    @GeneratedValue
+    private @Setter(AccessLevel.PRIVATE) Long id;
     private String name;
     private @Setter(AccessLevel.PRIVATE) Gender gender;
     private @Setter(AccessLevel.PRIVATE) Age age;
     private String img;
+    @Builder.Default
+    private boolean hungry = true;
+    @Builder.Default
+    private boolean thirsty = true;
+    @Builder.Default
+    private boolean litterBoxClean = true;
+    @Builder.Default
+    private boolean adopted = false;
 
-    // Working fields
-    private boolean isHungry = true;
-    private boolean isThirsty = true;
-    private boolean isLitterBoxClean = true;
-    private boolean isAdopted = false;
-
-    // Constructor
-    public Cat(String name, Gender gender, Age age, String img) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.img = img;
+    @Scheduled
+    public void resetPropertiesAtMidnight() {
+        this.hungry = true;
+        this.thirsty = true;
+        this.litterBoxClean = false;
     }
 }

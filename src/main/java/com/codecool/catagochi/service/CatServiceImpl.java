@@ -1,14 +1,15 @@
 package com.codecool.catagochi.service;
 
 import com.codecool.catagochi.entity.Cat;
-import com.codecool.catagochi.data.CatStorage;
+import com.codecool.catagochi.repository.CatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
-public class CatService {
-    @Autowired
-    private CatStorage catStorage;
+import java.util.ArrayList;
+import java.util.List;
+
+@Component(value="catImpl")
+public class CatServiceImpl implements CatService {
 
     // Time-triggered event
     // At midnight all working fields get reset
@@ -18,29 +19,8 @@ public class CatService {
         cat.setLitterBoxClean(false);
     }
 
-    public Cat findCatById(int id) throws Exception {
-        return catStorage.getAllCats().stream()
-                .filter(c -> c.getId() == id)
-                .findFirst()
-                .orElseThrow(()->new Exception("There is no cat with id: "+ id));
-    }
-
-    public Cat findMyCatById(int id) throws Exception {
-        return catStorage.getMyCats().stream()
-                .filter(c -> c.getId() == id)
-                .findFirst()
-                .orElseThrow(()->new Exception("You have not adopted any cat with id: "+ id));
-    }
-
-    public Cat findCatByName(String name) {
-        return catStorage.getMyCats().stream()
-                .filter(c -> c.getName().equals(name))
-                .findFirst()
-                .orElse(null);
-    }
-
-    public Cat changeState(int id, String state) throws Exception {
-        Cat cat = findMyCatById(id);
+    public Cat changeState(Long id, String state) throws Exception {
+        Cat cat = getById(id);
         switch(state) {
             case "food":
                 cat.setHungry(false);
@@ -56,27 +36,55 @@ public class CatService {
         return cat;
     }
 
-    public Cat renameCatById(int id, String newName) throws Exception {
-        Cat catById = findMyCatById(id);
-        Cat catByName = findCatByName(newName);
+    public Cat renameCatById(Long id, String newName) throws Exception {
+        Cat catById = getById(id);
+        Cat catByName = getByName(newName);
         if (catById == null) {
             throw new Exception("You do not have a cat with id: " + id);
         }
         if (catByName == null) {
             catById.setName(newName);
+            saveOrUpdate(catById);
             return catById;
         }
         else throw new Exception("You already have a cat with name: " + newName);
     }
 
-    public Cat adopt(int id) throws Exception {
-        Cat cat = findCatById(id);
-        if (cat == null) {
-            throw new Exception("There is no cat with id: " + id);
+    private Cat getByName(String newName) throws Exception {
+        return listAll().stream()
+                .filter(cat -> cat.getName().equals(newName))
+                .findFirst()
+                .orElseThrow(()->new Exception("You have not adopted any cat with name: " + newName));
         }
-        else {
-            cat.setAdopted(true);
-            return cat;
-        }
+
+    // *******************************************************************
+
+    @Autowired
+    private CatRepository catRepository;
+
+    @Override
+    public List<Cat> listAll() {
+        List<Cat> cats = new ArrayList<>();
+        catRepository.findAll().forEach(cats::add);
+        return cats;
+    }
+
+    @Override
+    public Cat getById(Long id) throws Exception {
+        return listAll().stream()
+                .filter(cat -> cat.getId() == id)
+                .findFirst()
+                .orElseThrow(()->new Exception("There is no cat with id: " + id));
+    }
+
+    @Override
+    public Cat saveOrUpdate(Cat cat) {
+        catRepository.save(cat);
+        return cat;
+    }
+
+    @Override
+    public void delete(Long id) {
+
     }
 }
