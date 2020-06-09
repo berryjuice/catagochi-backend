@@ -32,11 +32,4 @@ public class Cat {
     private boolean litterBoxClean = true;
     @Builder.Default
     private boolean adopted = false;
-
-    @Scheduled
-    public void resetPropertiesAtMidnight() {
-        this.hungry = true;
-        this.thirsty = true;
-        this.litterBoxClean = false;
-    }
 }

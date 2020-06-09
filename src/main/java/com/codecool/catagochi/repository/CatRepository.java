@@ -13,4 +13,7 @@ public interface CatRepository extends CrudRepository<Cat, Long> {
 
     @Query("SELECT c from Cat c WHERE c.adopted=true AND c.id=:id")
     Cat findMyCatById(Long id);
+
+    @Query("SELECT c from Cat c WHERE c.id=:id")
+    Cat findCatById(Long id);
 }

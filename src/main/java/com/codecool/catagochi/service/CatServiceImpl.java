@@ -11,53 +11,30 @@ import java.util.List;
 @Component(value="catImpl")
 public class CatServiceImpl implements CatService {
 
-    // Time-triggered event
-    // At midnight all working fields get reset
-    public void resetProperties(Cat cat) {
-        cat.setHungry(true);
-        cat.setThirsty(true);
-        cat.setLitterBoxClean(false);
-    }
-
-    public Cat changeState(Long id, String state) throws Exception {
-        Cat cat = getById(id);
-        switch(state) {
-            case "food":
-                cat.setHungry(false);
-                break;
-            case "drink":
-                cat.setThirsty(false);
-                break;
-            case "litterbox":
-                cat.setLitterBoxClean(true);
-                break;
-            default:
-        }
-        return cat;
-    }
-
-    public Cat renameCatById(Long id, String newName) throws Exception {
-        Cat catById = getById(id);
-        Cat catByName = getByName(newName);
-        if (catById == null) {
-            throw new Exception("You do not have a cat with id: " + id);
-        }
-        if (catByName == null) {
-            catById.setName(newName);
-            saveOrUpdate(catById);
-            return catById;
-        }
-        else throw new Exception("You already have a cat with name: " + newName);
-    }
-
-    private Cat getByName(String newName) throws Exception {
-        return listAll().stream()
-                .filter(cat -> cat.getName().equals(newName))
-                .findFirst()
-                .orElseThrow(()->new Exception("You have not adopted any cat with name: " + newName));
-        }
-
-    // *******************************************************************
+//    // Time-triggered event
+//    // At midnight all working fields get reset
+//    public void resetProperties(Cat cat) {
+//        cat.setHungry(true);
+//        cat.setThirsty(true);
+//        cat.setLitterBoxClean(false);
+//    }
+//
+//    public Cat changeState(Long id, String state) throws Exception {
+//        Cat cat = getById(id);
+//        switch(state) {
+//            case "food":
+//                cat.setHungry(false);
+//                break;
+//            case "drink":
+//                cat.setThirsty(false);
+//                break;
+//            case "litterbox":
+//                cat.setLitterBoxClean(true);
+//                break;
+//            default:
+//        }
+//        return cat;
+//    }
 
     @Autowired
     private CatRepository catRepository;
@@ -71,10 +48,11 @@ public class CatServiceImpl implements CatService {
 
     @Override
     public Cat getById(Long id) throws Exception {
-        return listAll().stream()
-                .filter(cat -> cat.getId() == id)
-                .findFirst()
-                .orElseThrow(()->new Exception("There is no cat with id: " + id));
+        try {
+            return catRepository.findCatById(id);
+        } catch (Exception e) {
+            throw new Exception("There is no cat with id: " + id);
+        }
     }
 
     @Override
@@ -83,8 +61,17 @@ public class CatServiceImpl implements CatService {
         return cat;
     }
 
+    // Time-triggered event
+    // At midnight all day-dependent properties are set to their morning values
     @Override
-    public void delete(Long id) {
-
+    public void resetPropertiesAtMidnight() {
+        List<Cat> myCats = catRepository.findAllAdoptedCat();
+        for (Cat cat : myCats) {
+            cat.setHungry(true);
+            cat.setThirsty(true);
+            cat.setLitterBoxClean(false);
+        }
     }
+
+
 }

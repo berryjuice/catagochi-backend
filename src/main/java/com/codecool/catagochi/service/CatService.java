@@ -11,9 +11,5 @@ public interface CatService {
 
     Cat saveOrUpdate(Cat cat);
 
-    void delete(Long id);
-
-    //Cat saveOrUpdateCatDetails(CatDetails catDetails);
-
-
+    void resetPropertiesAtMidnight();
 }
