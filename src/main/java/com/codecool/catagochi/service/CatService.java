@@ -5,11 +5,27 @@ import com.codecool.catagochi.entity.Cat;
 import java.util.List;
 
 public interface CatService {
-    List<Cat> listAll();
+    List<Cat> listAllCat();
 
-    Cat getById(Long id) throws Exception;
+    List<Cat> listMyCats();
 
-    Cat saveOrUpdate(Cat cat);
+    Cat findMyCatById(Long id);
 
-    void resetPropertiesAtMidnight();
+    Cat findAnyCatById(Long id);
+
+    Cat giveFood(Long id);
+
+    Cat giveDrink(Long id);
+
+    Cat cleanLitterBox(Long id);
+
+    Cat adoptCatById(Long id);
+
+    Cat renameMyCatById(Long id, String newName) throws Exception;
+
+    List<String> listAllMyCatsNames();
+
+    void resetProperties();
+
+    //Cat saveOrUpdate(Cat cat);
 }
