@@ -14,11 +14,15 @@ import java.util.List;
 public interface CatRepository extends CrudRepository<Cat, Long> {
 
     @Transactional
-    @Query("SELECT c from Cat c WHERE c.adopted=false")
+    @Query("SELECT c from Cat c")
     List<Cat> listAllCat();
 
+    @Transactional
+    @Query("SELECT c from Cat c WHERE c.adopted=false")
+    List<Cat> listAllAdoptableCat();
+
     @Query("SELECT c from Cat c WHERE c.adopted=true")
-    List<Cat> findMyCats();
+    List<Cat> listMyCats();
 
     @Query("SELECT c from Cat c WHERE c.adopted=true AND c.id=:id")
     Cat findMyCatById(Long id);

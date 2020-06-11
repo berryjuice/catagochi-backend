@@ -26,14 +26,6 @@ public class CatagochiApplication {
     @Autowired
     private CatRepository catRepository;
 
-    @Autowired
-    private CatServiceImpl catServiceImpl;
-
-    @Scheduled(cron="0 0 0 * * *")
-    void resetPropertiesAtMidnight() {
-        catServiceImpl.resetProperties();
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(CatagochiApplication.class, args);
     }

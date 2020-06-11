@@ -20,7 +20,7 @@ public class CatController {
 
     @GetMapping("/")
     public List<Cat> listAllCats() {
-        return catServiceImpl.listAllCat();
+        return catServiceImpl.listAllAdoptableCat();
     }
 
     @GetMapping("/{id}")

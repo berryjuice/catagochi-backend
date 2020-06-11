@@ -7,6 +7,8 @@ import java.util.List;
 public interface CatService {
     List<Cat> listAllCat();
 
+    List<Cat> listAllAdoptableCat();
+
     List<Cat> listMyCats();
 
     Cat findMyCatById(Long id);
