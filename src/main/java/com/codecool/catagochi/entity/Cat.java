@@ -6,6 +6,7 @@ import com.codecool.catagochi.model.Gender;
 import com.codecool.catagochi.model.Size;
 import com.sun.istack.NotNull;
 import lombok.*;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 

@@ -29,7 +29,7 @@ public class CatagochiApplication {
     @Autowired
     private CatServiceImpl catServiceImpl;
 
-    @Scheduled(cron="14 45 0 * * *")
+    @Scheduled(cron="0 0 0 * * *")
     void resetPropertiesAtMidnight() {
         catServiceImpl.resetProperties();
     }

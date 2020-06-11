@@ -3,6 +3,7 @@ package com.codecool.catagochi.service;
 import com.codecool.catagochi.entity.Cat;
 import com.codecool.catagochi.repository.CatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component(value="catImpl")
+@EnableScheduling
 public class CatServiceImpl implements CatService {
 
     @Autowired
