@@ -9,9 +9,11 @@ import org.springframework.scheduling.annotation.Scheduled;
 @Configuration
 @EnableScheduling
 public class CronConfiguration {
+
     @Autowired
     private CatServiceImpl catServiceImpl;
 
+    /** This method sets the basic properties (hungry, thirsty, litterBoxClean) to their default values */
     @Scheduled(cron="0 0 0 * * *")
     void resetPropertiesAtMidnight() {
         catServiceImpl.resetProperties();

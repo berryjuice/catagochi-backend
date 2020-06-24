@@ -1,10 +1,10 @@
 package com.codecool.catagochi;
 
 import com.codecool.catagochi.entity.Cat;
+import com.codecool.catagochi.model.Age;
 import com.codecool.catagochi.repository.CatRepository;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -91,6 +91,37 @@ public class RepositoryTests {
         catRepository.save(cat2);
 
         assertThat(catRepository.listAllAdoptableCat()).hasSize(1);
+    }
+
+    @Test
+    public void renameMyCatById() {
+        catRepository.save(Cat.builder().build());
+        catRepository.adoptCatById(1L);
+        int i = catRepository.renameMyCatById(1L, "newname");
+        Assertions.assertEquals(1, i);
+    }
+
+    @Test
+    public void renameACatToANameThatAlreadyAdopted() {
+        Cat cat1 = Cat.builder()
+                .name("Cat1")
+                .age(Age.ADULT)
+                .build();
+
+        Cat cat2 = Cat.builder()
+                .name("Cat2")
+                .age(Age.KITTEN)
+                .build();
+
+        catRepository.save(cat1);
+        catRepository.save(cat2);
+
+        catRepository.adoptCatById(1L);
+        catRepository.adoptCatById(2L);
+
+        catRepository.renameMyCatById(1L, "Cat2");
+
+        assertThat(catRepository.findMyCatById(1L).getName()).isEqualTo("Cat1");
     }
 
 }
