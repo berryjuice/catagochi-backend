@@ -33,3 +33,5 @@ build/
 /mvnw.cmd
 /.mvn/
 src/main/resources/application.properties
+/src/main/resources/data/cats.json
+/petfinder_200807.txt
