@@ -81,6 +81,25 @@ public class CatServiceImpl implements CatService {
     }
 
     @Override
+    public void decreaseHappiness() {
+        List<Cat> unhappyCats = catRepository.listUnhappyCats();
+        for (Cat c : unhappyCats) {
+            c.setHappiness(c.getHappiness() - 1);
+            if (c.getHappiness() == 0) {
+                c.escape();
+            }
+        }
+    }
+
+    @Override
+    public void setHappinessToHappy() {
+        List<Cat> satisfiedCats = catRepository.listSatisfiedCats();
+        for (Cat c : satisfiedCats) {
+            c.setHappiness(3);
+        }
+    }
+
+    @Override
     public void resetProperties() {
         catRepository.resetProperties();
     }

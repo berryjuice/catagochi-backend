@@ -63,4 +63,12 @@ public interface CatRepository extends CrudRepository<Cat, Long> {
     @Query("UPDATE Cat c SET c.hungry=true, c.thirsty=true, c.litterBoxClean=false WHERE c.adopted=true")
     @Modifying(flushAutomatically = true)
     int resetProperties();
+
+    @Transactional
+    @Query("SELECT c from Cat c WHERE c.hungry=true OR c.thirsty=true OR c.litterBoxClean=false AND c.adopted=true")
+    List<Cat> listUnhappyCats();
+
+    @Transactional
+    @Query("SELECT c from Cat c WHERE c.hungry=false AND c.thirsty=false AND c.litterBoxClean=true AND c.adopted=true")
+    List<Cat> listSatisfiedCats();
 }

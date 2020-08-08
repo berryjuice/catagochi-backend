@@ -29,5 +29,9 @@ public interface CatService {
 
     void resetProperties();
 
+    void decreaseHappiness();
+
+    void setHappinessToHappy();
+
     //Cat saveOrUpdate(Cat cat);
 }

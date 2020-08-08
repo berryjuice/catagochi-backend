@@ -1,9 +1,6 @@
 package com.codecool.catagochi.entity;
 
-import com.codecool.catagochi.model.Age;
-import com.codecool.catagochi.model.Breed;
-import com.codecool.catagochi.model.Gender;
-import com.codecool.catagochi.model.Size;
+import com.codecool.catagochi.model.*;
 import com.sun.istack.NotNull;
 import lombok.*;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -57,4 +54,11 @@ public class Cat {
 
     @Builder.Default
     private boolean adopted = false;
+
+    @Builder.Default
+    private int happiness = 3;
+
+    public void escape() {
+        System.out.println("Your cat got unhappy and has run away from you!");
+    }
 }

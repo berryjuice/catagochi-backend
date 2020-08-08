@@ -16,6 +16,8 @@ public class CronConfiguration {
     /** This method sets the basic properties (hungry, thirsty, litterBoxClean) to their default values */
     @Scheduled(cron="0 0 0 * * *")
     void resetPropertiesAtMidnight() {
+        catServiceImpl.decreaseHappiness();
+        catServiceImpl.setHappinessToHappy();
         catServiceImpl.resetProperties();
     }
 }
