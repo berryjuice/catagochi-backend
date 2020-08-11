@@ -1,6 +1,7 @@
 package com.codecool.catagochi.entity;
 
 import com.codecool.catagochi.model.*;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.sun.istack.NotNull;
 import lombok.*;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -8,6 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Component
 @Data
@@ -15,7 +17,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Cat {
+public class Cat implements Serializable {
     @Id
     @GeneratedValue
     private @Setter(AccessLevel.PRIVATE) Long id;
@@ -58,8 +60,8 @@ public class Cat {
     @Builder.Default
     private int happiness = 3;
 
-//    @ManyToOne
-//    private Owner owner;
+    @OneToOne(mappedBy = "cat")
+    private Owner owner;
 
     public void escape() {
         System.out.println("Your cat got unhappy and has run away from you!");

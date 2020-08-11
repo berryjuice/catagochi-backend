@@ -1,12 +1,12 @@
 package com.codecool.catagochi.controller;
 
 import com.codecool.catagochi.entity.Cat;
-import com.codecool.catagochi.repository.CatRepository;
 import com.codecool.catagochi.service.CatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.lang.Nullable;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 
