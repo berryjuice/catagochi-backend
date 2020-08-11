@@ -1,0 +1,1493 @@
+{
+    "animals": [
+        {
+            "id": 48721085,
+            "organization_id": "FL1548",
+            "url": "https://www.petfinder.com/cat/clarabelle-48721085/fl/panama-city/animal-haven-rescue-of-bay-county-florida-inc-fl1548/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": "Tuxedo",
+                "mixed": true,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Black & White / Tuxedo",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Female",
+            "size": "Medium",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": false,
+                "house_trained": true,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": true,
+                "dogs": true,
+                "cats": true
+            },
+            "tags": [],
+            "name": "Clarabelle",
+            "description": "Meet Clarabelle, this little country angel is sweeter than honey! She loves to play, and is always looking for someone...",
+            "organization_animal_id": "15772825",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:26:25+0000",
+            "published_at": "2020-08-08T12:26:25+0000",
+            "distance": null,
+            "contact": {
+                "email": "ahrbc2017@gmail.com",
+                "phone": null,
+                "address": {
+                    "address1": "P.O. box 492",
+                    "address2": null,
+                    "city": "Panama city",
+                    "state": "FL",
+                    "postcode": "32402",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721085"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl1548"
+                }
+            }
+        },
+        {
+            "id": 48721084,
+            "organization_id": "IN16",
+            "url": "https://www.petfinder.com/cat/eddy-48721084/in/indianapolis/alliance-for-responsible-pet-ownership-inc-arpo-in16/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": null,
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Medium",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": true,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": false
+            },
+            "environment": {
+                "children": true,
+                "dogs": true,
+                "cats": true
+            },
+            "tags": [],
+            "name": "Eddy",
+            "description": "If you are interested in adopting an ARPO pet, please visit our website, for details about our fees and process,...",
+            "organization_animal_id": "15739540-2005103C",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:26:19+0000",
+            "published_at": "2020-08-08T12:26:19+0000",
+            "distance": null,
+            "contact": {
+                "email": "adoptions@adoptarpo.org",
+                "phone": "317-774-8292   ",
+                "address": {
+                    "address1": null,
+                    "address2": null,
+                    "city": "Indianapolis",
+                    "state": "IN",
+                    "postcode": "46038",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721084"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/in16"
+                }
+            }
+        },
+        {
+            "id": 48721077,
+            "organization_id": "GA477",
+            "url": "https://www.petfinder.com/cat/oat-athens-ga-48721077/ga/athens/circle-of-friends-animal-society-inc-ga477/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": true,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Gray & White",
+                "secondary": "Gray / Blue / Silver",
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Medium",
+            "coat": "Short",
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": true,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": true,
+                "dogs": true,
+                "cats": true
+            },
+            "tags": [],
+            "name": "Oat - Athens, GA",
+            "description": "Adoption Application - http://fs17.formsite.com/cofas/catform/\n\n\nAll of our cats and kittens are fostered in homes so we know their personalities. They...",
+            "organization_animal_id": null,
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/1/?bust=1596889421&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/1/?bust=1596889421&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/1/?bust=1596889421&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/1/?bust=1596889421"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/2/?bust=1596889434&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/2/?bust=1596889434&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/2/?bust=1596889434&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/2/?bust=1596889434"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/3/?bust=1596889437&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/3/?bust=1596889437&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/3/?bust=1596889437&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/3/?bust=1596889437"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/4/?bust=1596889440&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/4/?bust=1596889440&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/4/?bust=1596889440&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/4/?bust=1596889440"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/5/?bust=1596889444&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/5/?bust=1596889444&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/5/?bust=1596889444&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/5/?bust=1596889444"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/6/?bust=1596889451&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/6/?bust=1596889451&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/6/?bust=1596889451&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/6/?bust=1596889451"
+                }
+            ],
+            "primary_photo_cropped": {
+                "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/1/?bust=1596889421&width=300",
+                "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/1/?bust=1596889421&width=450",
+                "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/1/?bust=1596889421&width=600",
+                "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721077/1/?bust=1596889421"
+            },
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:24:39+0000",
+            "published_at": "2020-08-08T12:24:39+0000",
+            "distance": null,
+            "contact": {
+                "email": "info@cofas.org",
+                "phone": null,
+                "address": {
+                    "address1": null,
+                    "address2": null,
+                    "city": "Athens",
+                    "state": "GA",
+                    "postcode": "30605",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721077"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/ga477"
+                }
+            }
+        },
+        {
+            "id": 48721070,
+            "organization_id": "FL159",
+            "url": "https://www.petfinder.com/cat/jasmine-48721070/fl/sarasota/humane-society-of-sarasota-county-inc-fl159/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Black",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [
+                "Show API"
+            ],
+            "name": "Jasmine",
+            "description": null,
+            "organization_animal_id": "HSSC-A-10921",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:11+0000",
+            "published_at": "2020-08-08T12:20:11+0000",
+            "distance": null,
+            "contact": {
+                "email": "tstoddard@hssc.org",
+                "phone": "(941) 955-4131",
+                "address": {
+                    "address1": "2331 15th Street",
+                    "address2": null,
+                    "city": "Sarasota",
+                    "state": "FL",
+                    "postcode": "34237",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721070"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl159"
+                }
+            }
+        },
+        {
+            "id": 48721071,
+            "organization_id": "FL159",
+            "url": "https://www.petfinder.com/cat/maggie-48721071/fl/sarasota/humane-society-of-sarasota-county-inc-fl159/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Black",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [
+                "Show API"
+            ],
+            "name": "Maggie",
+            "description": null,
+            "organization_animal_id": "HSSC-A-10922",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:11+0000",
+            "published_at": "2020-08-08T12:20:11+0000",
+            "distance": null,
+            "contact": {
+                "email": "tstoddard@hssc.org",
+                "phone": "(941) 955-4131",
+                "address": {
+                    "address1": "2331 15th Street",
+                    "address2": null,
+                    "city": "Sarasota",
+                    "state": "FL",
+                    "postcode": "34237",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721071"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl159"
+                }
+            }
+        },
+        {
+            "id": 48721072,
+            "organization_id": "FL159",
+            "url": "https://www.petfinder.com/cat/destiny-48721072/fl/sarasota/humane-society-of-sarasota-county-inc-fl159/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Black",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [
+                "Show API"
+            ],
+            "name": "Destiny",
+            "description": "Note from Destiny&amp;#39;s foster: &amp;#34;Destiny is a polite little girl. She loves to be held like a baby while you&amp;#39;re...",
+            "organization_animal_id": "HSSC-A-10941",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:11+0000",
+            "published_at": "2020-08-08T12:20:11+0000",
+            "distance": null,
+            "contact": {
+                "email": "tstoddard@hssc.org",
+                "phone": "(941) 955-4131",
+                "address": {
+                    "address1": "2331 15th Street",
+                    "address2": null,
+                    "city": "Sarasota",
+                    "state": "FL",
+                    "postcode": "34237",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721072"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl159"
+                }
+            }
+        },
+        {
+            "id": 48721073,
+            "organization_id": "FL159",
+            "url": "https://www.petfinder.com/cat/boots-48721073/fl/sarasota/humane-society-of-sarasota-county-inc-fl159/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Orange / Red",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [
+                "Show API"
+            ],
+            "name": "Boots",
+            "description": null,
+            "organization_animal_id": "HSSC-A-10918",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:11+0000",
+            "published_at": "2020-08-08T12:20:11+0000",
+            "distance": null,
+            "contact": {
+                "email": "tstoddard@hssc.org",
+                "phone": "(941) 955-4131",
+                "address": {
+                    "address1": "2331 15th Street",
+                    "address2": null,
+                    "city": "Sarasota",
+                    "state": "FL",
+                    "postcode": "34237",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721073"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl159"
+                }
+            }
+        },
+        {
+            "id": 48721074,
+            "organization_id": "FL159",
+            "url": "https://www.petfinder.com/cat/phoebe-48721074/fl/sarasota/humane-society-of-sarasota-county-inc-fl159/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Black",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [
+                "Show API"
+            ],
+            "name": "Phoebe",
+            "description": null,
+            "organization_animal_id": "HSSC-A-10923",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:11+0000",
+            "published_at": "2020-08-08T12:20:11+0000",
+            "distance": null,
+            "contact": {
+                "email": "tstoddard@hssc.org",
+                "phone": "(941) 955-4131",
+                "address": {
+                    "address1": "2331 15th Street",
+                    "address2": null,
+                    "city": "Sarasota",
+                    "state": "FL",
+                    "postcode": "34237",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721074"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl159"
+                }
+            }
+        },
+        {
+            "id": 48721075,
+            "organization_id": "FL159",
+            "url": "https://www.petfinder.com/cat/sully-48721075/fl/sarasota/humane-society-of-sarasota-county-inc-fl159/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Brown / Chocolate",
+                "secondary": "Black",
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [
+                "Show API"
+            ],
+            "name": "Sully",
+            "description": null,
+            "organization_animal_id": "HSSC-A-10924",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:11+0000",
+            "published_at": "2020-08-08T12:20:11+0000",
+            "distance": null,
+            "contact": {
+                "email": "tstoddard@hssc.org",
+                "phone": "(941) 955-4131",
+                "address": {
+                    "address1": "2331 15th Street",
+                    "address2": null,
+                    "city": "Sarasota",
+                    "state": "FL",
+                    "postcode": "34237",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721075"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl159"
+                }
+            }
+        },
+        {
+            "id": 48721076,
+            "organization_id": "FL159",
+            "url": "https://www.petfinder.com/cat/damien-48721076/fl/sarasota/humane-society-of-sarasota-county-inc-fl159/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Black",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [
+                "Show API"
+            ],
+            "name": "Damien",
+            "description": "Note from Damien&amp;#39;s foster: &amp;#34;Damien is a laid back fella. He can never get enough pets and he will even...",
+            "organization_animal_id": "HSSC-A-10940",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:11+0000",
+            "published_at": "2020-08-08T12:20:11+0000",
+            "distance": null,
+            "contact": {
+                "email": "tstoddard@hssc.org",
+                "phone": "(941) 955-4131",
+                "address": {
+                    "address1": "2331 15th Street",
+                    "address2": null,
+                    "city": "Sarasota",
+                    "state": "FL",
+                    "postcode": "34237",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721076"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl159"
+                }
+            }
+        },
+        {
+            "id": 48721069,
+            "organization_id": "FL159",
+            "url": "https://www.petfinder.com/cat/nala-48721069/fl/sarasota/humane-society-of-sarasota-county-inc-fl159/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Cream / Ivory",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [
+                "Show API"
+            ],
+            "name": "Nala",
+            "description": null,
+            "organization_animal_id": "HSSC-A-10917",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:10+0000",
+            "published_at": "2020-08-08T12:20:10+0000",
+            "distance": null,
+            "contact": {
+                "email": "tstoddard@hssc.org",
+                "phone": "(941) 955-4131",
+                "address": {
+                    "address1": "2331 15th Street",
+                    "address2": null,
+                    "city": "Sarasota",
+                    "state": "FL",
+                    "postcode": "34237",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721069"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/fl159"
+                }
+            }
+        },
+        {
+            "id": 48721064,
+            "organization_id": "VA812",
+            "url": "https://www.petfinder.com/cat/oddish-48721064/va/fredericksburg/sfc-virginia-va812/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Orange / Red",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [],
+            "name": "Oddish",
+            "description": null,
+            "organization_animal_id": "SFC-A-1093",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:10+0000",
+            "published_at": "2020-08-08T12:20:10+0000",
+            "distance": null,
+            "contact": {
+                "email": "adoptme@sfcva.org",
+                "phone": null,
+                "address": {
+                    "address1": null,
+                    "address2": null,
+                    "city": "Fredericksburg",
+                    "state": "VA",
+                    "postcode": "22407",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721064"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/va812"
+                }
+            }
+        },
+        {
+            "id": 48721065,
+            "organization_id": "VA812",
+            "url": "https://www.petfinder.com/cat/lapras-48721065/va/fredericksburg/sfc-virginia-va812/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Tortoiseshell",
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [],
+            "name": "Lapras",
+            "description": null,
+            "organization_animal_id": "SFC-A-1089",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:10+0000",
+            "published_at": "2020-08-08T12:20:10+0000",
+            "distance": null,
+            "contact": {
+                "email": "adoptme@sfcva.org",
+                "phone": null,
+                "address": {
+                    "address1": null,
+                    "address2": null,
+                    "city": "Fredericksburg",
+                    "state": "VA",
+                    "postcode": "22407",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721065"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/va812"
+                }
+            }
+        },
+        {
+            "id": 48721066,
+            "organization_id": "VA812",
+            "url": "https://www.petfinder.com/cat/blanca-48721066/va/fredericksburg/sfc-virginia-va812/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Himalayan",
+                "secondary": "Domestic Short Hair",
+                "mixed": true,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Gray / Blue / Silver",
+                "secondary": "White",
+                "tertiary": null
+            },
+            "age": "Adult",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [],
+            "name": "Blanca",
+            "description": null,
+            "organization_animal_id": "SFC-A-1061",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:10+0000",
+            "published_at": "2020-08-08T12:20:10+0000",
+            "distance": null,
+            "contact": {
+                "email": "adoptme@sfcva.org",
+                "phone": null,
+                "address": {
+                    "address1": null,
+                    "address2": null,
+                    "city": "Fredericksburg",
+                    "state": "VA",
+                    "postcode": "22407",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721066"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/va812"
+                }
+            }
+        },
+        {
+            "id": 48721067,
+            "organization_id": "VA812",
+            "url": "https://www.petfinder.com/cat/regent-48721067/va/fredericksburg/sfc-virginia-va812/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Siamese",
+                "secondary": "Domestic Short Hair",
+                "mixed": true,
+                "unknown": false
+            },
+            "colors": {
+                "primary": null,
+                "secondary": "White",
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [],
+            "name": "Regent",
+            "description": null,
+            "organization_animal_id": "SFC-A-1115",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:10+0000",
+            "published_at": "2020-08-08T12:20:10+0000",
+            "distance": null,
+            "contact": {
+                "email": "adoptme@sfcva.org",
+                "phone": null,
+                "address": {
+                    "address1": null,
+                    "address2": null,
+                    "city": "Fredericksburg",
+                    "state": "VA",
+                    "postcode": "22407",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721067"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/va812"
+                }
+            }
+        },
+        {
+            "id": 48721068,
+            "organization_id": "VA812",
+            "url": "https://www.petfinder.com/cat/azura-48721068/va/fredericksburg/sfc-virginia-va812/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Himalayan",
+                "secondary": "Domestic Short Hair",
+                "mixed": true,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Gray / Blue / Silver",
+                "secondary": "White",
+                "tertiary": null
+            },
+            "age": "Senior",
+            "gender": "Female",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [],
+            "name": "Azura",
+            "description": null,
+            "organization_animal_id": "SFC-A-1060",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:20:10+0000",
+            "published_at": "2020-08-08T12:20:10+0000",
+            "distance": null,
+            "contact": {
+                "email": "adoptme@sfcva.org",
+                "phone": null,
+                "address": {
+                    "address1": null,
+                    "address2": null,
+                    "city": "Fredericksburg",
+                    "state": "VA",
+                    "postcode": "22407",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721068"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/va812"
+                }
+            }
+        },
+        {
+            "id": 48721054,
+            "organization_id": "GA477",
+            "url": "https://www.petfinder.com/cat/barley-athens-ga-48721054/ga/athens/circle-of-friends-animal-society-inc-ga477/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": true,
+                "unknown": false
+            },
+            "colors": {
+                "primary": "Gray & White",
+                "secondary": "Gray / Blue / Silver",
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Medium",
+            "coat": "Short",
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": true,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": true,
+                "dogs": true,
+                "cats": true
+            },
+            "tags": [],
+            "name": "Barley- Athens, GA",
+            "description": "Adoption Application - http://fs17.formsite.com/cofas/catform/\n\n\nAll of our cats and kittens are fostered in homes so we know their personalities. They...",
+            "organization_animal_id": null,
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/5/?bust=1596889116&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/5/?bust=1596889116&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/5/?bust=1596889116&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/5/?bust=1596889116"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/1/?bust=1596889057&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/1/?bust=1596889057&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/1/?bust=1596889057&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/1/?bust=1596889057"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/2/?bust=1596889090&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/2/?bust=1596889090&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/2/?bust=1596889090&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/2/?bust=1596889090"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/3/?bust=1596889092&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/3/?bust=1596889092&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/3/?bust=1596889092&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/3/?bust=1596889092"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/4/?bust=1596889106&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/4/?bust=1596889106&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/4/?bust=1596889106&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/4/?bust=1596889106"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/6/?bust=1596889117&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/6/?bust=1596889117&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/6/?bust=1596889117&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/6/?bust=1596889117"
+                }
+            ],
+            "primary_photo_cropped": {
+                "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/5/?bust=1596889116&width=300",
+                "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/5/?bust=1596889116&width=450",
+                "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/5/?bust=1596889116&width=600",
+                "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721054/5/?bust=1596889116"
+            },
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:19:35+0000",
+            "published_at": "2020-08-08T12:19:35+0000",
+            "distance": null,
+            "contact": {
+                "email": "info@cofas.org",
+                "phone": null,
+                "address": {
+                    "address1": null,
+                    "address2": null,
+                    "city": "Athens",
+                    "state": "GA",
+                    "postcode": "30605",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721054"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/ga477"
+                }
+            }
+        },
+        {
+            "id": 48721055,
+            "organization_id": "KY109",
+            "url": "https://www.petfinder.com/cat/allie-48721055/ky/frenchburg/menifee-county-animal-shelter-ky109/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Calico",
+                "secondary": "Domestic Short Hair",
+                "mixed": true,
+                "unknown": false
+            },
+            "colors": {
+                "primary": null,
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Young",
+            "gender": "Female",
+            "size": "Medium",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": true,
+                "house_trained": true,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": true
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": true
+            },
+            "tags": [],
+            "name": "Allie",
+            "description": "You can fill out an adoption application online on our official website.\nBeautiful Allie was brought to the shelter during...",
+            "organization_animal_id": "15934365",
+            "photos": [
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/1/?bust=1596889362&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/1/?bust=1596889362&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/1/?bust=1596889362&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/1/?bust=1596889362"
+                },
+                {
+                    "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/2/?bust=1596889361&width=100",
+                    "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/2/?bust=1596889361&width=300",
+                    "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/2/?bust=1596889361&width=600",
+                    "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/2/?bust=1596889361"
+                }
+            ],
+            "primary_photo_cropped": {
+                "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/1/?bust=1596889362&width=300",
+                "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/1/?bust=1596889362&width=450",
+                "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/1/?bust=1596889362&width=600",
+                "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48721055/1/?bust=1596889362"
+            },
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:12:37+0000",
+            "published_at": "2020-08-08T12:12:37+0000",
+            "distance": null,
+            "contact": {
+                "email": "menifeeshelter@gmail.com",
+                "phone": "606 768-9368 ",
+                "address": {
+                    "address1": "P.O. Box 75",
+                    "address2": "381 Little League Lane",
+                    "city": "Frenchburg",
+                    "state": "KY",
+                    "postcode": "40316",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721055"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/ky109"
+                }
+            }
+        },
+        {
+            "id": 48721049,
+            "organization_id": "VA88",
+            "url": "https://www.petfinder.com/cat/zen-48721049/va/virginia-beach/virginia-beach-spca-va88/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Short Hair",
+                "secondary": null,
+                "mixed": false,
+                "unknown": false
+            },
+            "colors": {
+                "primary": null,
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": false,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": false
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [],
+            "name": "Zen",
+            "description": null,
+            "organization_animal_id": "44933800",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:06:25+0000",
+            "published_at": "2020-08-08T12:06:25+0000",
+            "distance": null,
+            "contact": {
+                "email": "adoption@vbspca.com",
+                "phone": "(757) 427-0070",
+                "address": {
+                    "address1": "3040 Holland Road",
+                    "address2": null,
+                    "city": "Virginia Beach",
+                    "state": "VA",
+                    "postcode": "23453",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721049"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/va88"
+                }
+            }
+        },
+        {
+            "id": 48721044,
+            "organization_id": "WA370",
+            "url": "https://www.petfinder.com/cat/kuzco-48721044/wa/moses-lake/grant-county-animal-outreach-wa370/?referrer_id=656fbe25-c91e-47fa-8a23-ec831b69a871",
+            "type": "Cat",
+            "species": "Cat",
+            "breeds": {
+                "primary": "Domestic Medium Hair",
+                "secondary": "Domestic Short Hair",
+                "mixed": true,
+                "unknown": false
+            },
+            "colors": {
+                "primary": null,
+                "secondary": null,
+                "tertiary": null
+            },
+            "age": "Baby",
+            "gender": "Male",
+            "size": "Small",
+            "coat": null,
+            "attributes": {
+                "spayed_neutered": false,
+                "house_trained": false,
+                "declawed": false,
+                "special_needs": false,
+                "shots_current": false
+            },
+            "environment": {
+                "children": null,
+                "dogs": null,
+                "cats": null
+            },
+            "tags": [],
+            "name": "Kuzco",
+            "description": null,
+            "organization_animal_id": "45251392",
+            "photos": [],
+            "primary_photo_cropped": null,
+            "videos": [],
+            "status": "adoptable",
+            "status_changed_at": "2020-08-08T12:06:23+0000",
+            "published_at": "2020-08-08T12:06:23+0000",
+            "distance": null,
+            "contact": {
+                "email": "GCAOadoptions@outlook.com",
+                "phone": "(509) 762-9616",
+                "address": {
+                    "address1": "6725 Randolph Road",
+                    "address2": null,
+                    "city": "Moses Lake",
+                    "state": "WA",
+                    "postcode": "98837",
+                    "country": "US"
+                }
+            },
+            "_links": {
+                "self": {
+                    "href": "/v2/animals/48721044"
+                },
+                "type": {
+                    "href": "/v2/types/cat"
+                },
+                "organization": {
+                    "href": "/v2/organizations/wa370"
+                }
+            }
+        }
+    ],
+    "pagination": {
+        "count_per_page": 20,
+        "total_count": 93817,
+        "current_page": 1,
+        "total_pages": 4691,
+        "_links": {
+            "next": {
+                "href": "/v2/animals?page=2&type=cat"
+            }
+        }
+    }
+}

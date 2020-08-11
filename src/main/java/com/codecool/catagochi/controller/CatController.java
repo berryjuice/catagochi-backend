@@ -62,5 +62,10 @@ public class CatController {
     public Cat renameMyCatById(@PathVariable("id") Long id, @RequestBody @Nullable String newName) throws Exception {
         return catServiceImpl.renameMyCatById(id, newName);
     }
+
+//    @PostMapping("/login")
+//    public void login(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
+//        return catServiceImpl.renameMyCatById(id, newName);
+//    }
 }
 

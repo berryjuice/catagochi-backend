@@ -58,6 +58,9 @@ public class Cat {
     @Builder.Default
     private int happiness = 3;
 
+//    @ManyToOne
+//    private Owner owner;
+
     public void escape() {
         System.out.println("Your cat got unhappy and has run away from you!");
     }
