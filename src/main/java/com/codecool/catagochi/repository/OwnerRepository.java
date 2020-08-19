@@ -1,6 +1,5 @@
 package com.codecool.catagochi.repository;
 
-import com.codecool.catagochi.entity.Cat;
 import com.codecool.catagochi.entity.Owner;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

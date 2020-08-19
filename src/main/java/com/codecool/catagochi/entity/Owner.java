@@ -10,7 +10,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Address {
+public class Owner {
     @Id
     @GeneratedValue
     private @Setter(AccessLevel.PRIVATE) Long id;
@@ -19,6 +19,6 @@ public class Address {
     @JsonIgnore
     private String password;
 
-    @OneToOne(mappedBy = "address")
-    private Student student;
+    @OneToOne(mappedBy = "owner")
+    private Cat cat;
 }

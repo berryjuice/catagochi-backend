@@ -47,7 +47,7 @@
             "contact": {
                 "email": "ahrbc2017@gmail.com",
                 "phone": null,
-                "address": {
+                "owner": {
                     "address1": "P.O. box 492",
                     "address2": null,
                     "city": "Panama city",
@@ -115,7 +115,7 @@
             "contact": {
                 "email": "adoptions@adoptarpo.org",
                 "phone": "317-774-8292   ",
-                "address": {
+                "owner": {
                     "address1": null,
                     "address2": null,
                     "city": "Indianapolis",
@@ -225,7 +225,7 @@
             "contact": {
                 "email": "info@cofas.org",
                 "phone": null,
-                "address": {
+                "owner": {
                     "address1": null,
                     "address2": null,
                     "city": "Athens",
@@ -295,7 +295,7 @@
             "contact": {
                 "email": "tstoddard@hssc.org",
                 "phone": "(941) 955-4131",
-                "address": {
+                "owner": {
                     "address1": "2331 15th Street",
                     "address2": null,
                     "city": "Sarasota",
@@ -365,7 +365,7 @@
             "contact": {
                 "email": "tstoddard@hssc.org",
                 "phone": "(941) 955-4131",
-                "address": {
+                "owner": {
                     "address1": "2331 15th Street",
                     "address2": null,
                     "city": "Sarasota",
@@ -435,7 +435,7 @@
             "contact": {
                 "email": "tstoddard@hssc.org",
                 "phone": "(941) 955-4131",
-                "address": {
+                "owner": {
                     "address1": "2331 15th Street",
                     "address2": null,
                     "city": "Sarasota",
@@ -505,7 +505,7 @@
             "contact": {
                 "email": "tstoddard@hssc.org",
                 "phone": "(941) 955-4131",
-                "address": {
+                "owner": {
                     "address1": "2331 15th Street",
                     "address2": null,
                     "city": "Sarasota",
@@ -575,7 +575,7 @@
             "contact": {
                 "email": "tstoddard@hssc.org",
                 "phone": "(941) 955-4131",
-                "address": {
+                "owner": {
                     "address1": "2331 15th Street",
                     "address2": null,
                     "city": "Sarasota",
@@ -645,7 +645,7 @@
             "contact": {
                 "email": "tstoddard@hssc.org",
                 "phone": "(941) 955-4131",
-                "address": {
+                "owner": {
                     "address1": "2331 15th Street",
                     "address2": null,
                     "city": "Sarasota",
@@ -715,7 +715,7 @@
             "contact": {
                 "email": "tstoddard@hssc.org",
                 "phone": "(941) 955-4131",
-                "address": {
+                "owner": {
                     "address1": "2331 15th Street",
                     "address2": null,
                     "city": "Sarasota",
@@ -785,7 +785,7 @@
             "contact": {
                 "email": "tstoddard@hssc.org",
                 "phone": "(941) 955-4131",
-                "address": {
+                "owner": {
                     "address1": "2331 15th Street",
                     "address2": null,
                     "city": "Sarasota",
@@ -853,7 +853,7 @@
             "contact": {
                 "email": "adoptme@sfcva.org",
                 "phone": null,
-                "address": {
+                "owner": {
                     "address1": null,
                     "address2": null,
                     "city": "Fredericksburg",
@@ -921,7 +921,7 @@
             "contact": {
                 "email": "adoptme@sfcva.org",
                 "phone": null,
-                "address": {
+                "owner": {
                     "address1": null,
                     "address2": null,
                     "city": "Fredericksburg",
@@ -989,7 +989,7 @@
             "contact": {
                 "email": "adoptme@sfcva.org",
                 "phone": null,
-                "address": {
+                "owner": {
                     "address1": null,
                     "address2": null,
                     "city": "Fredericksburg",
@@ -1057,7 +1057,7 @@
             "contact": {
                 "email": "adoptme@sfcva.org",
                 "phone": null,
-                "address": {
+                "owner": {
                     "address1": null,
                     "address2": null,
                     "city": "Fredericksburg",
@@ -1125,7 +1125,7 @@
             "contact": {
                 "email": "adoptme@sfcva.org",
                 "phone": null,
-                "address": {
+                "owner": {
                     "address1": null,
                     "address2": null,
                     "city": "Fredericksburg",
@@ -1235,7 +1235,7 @@
             "contact": {
                 "email": "info@cofas.org",
                 "phone": null,
-                "address": {
+                "owner": {
                     "address1": null,
                     "address2": null,
                     "city": "Athens",
@@ -1321,7 +1321,7 @@
             "contact": {
                 "email": "menifeeshelter@gmail.com",
                 "phone": "606 768-9368 ",
-                "address": {
+                "owner": {
                     "address1": "P.O. Box 75",
                     "address2": "381 Little League Lane",
                     "city": "Frenchburg",
@@ -1389,7 +1389,7 @@
             "contact": {
                 "email": "adoption@vbspca.com",
                 "phone": "(757) 427-0070",
-                "address": {
+                "owner": {
                     "address1": "3040 Holland Road",
                     "address2": null,
                     "city": "Virginia Beach",
@@ -1457,7 +1457,7 @@
             "contact": {
                 "email": "GCAOadoptions@outlook.com",
                 "phone": "(509) 762-9616",
-                "address": {
+                "owner": {
                     "address1": "6725 Randolph Road",
                     "address2": null,
                     "city": "Moses Lake",

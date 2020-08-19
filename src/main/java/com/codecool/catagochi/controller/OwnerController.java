@@ -1,8 +1,6 @@
 package com.codecool.catagochi.controller;
 
-import com.codecool.catagochi.entity.Cat;
 import com.codecool.catagochi.entity.Owner;
-import com.codecool.catagochi.service.CatService;
 import com.codecool.catagochi.service.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

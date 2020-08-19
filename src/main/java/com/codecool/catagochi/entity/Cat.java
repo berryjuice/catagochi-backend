@@ -13,7 +13,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-public class Student {
+public class Cat {
     @Id
     @GeneratedValue
     private @Setter(AccessLevel.PRIVATE) Long id;
@@ -59,7 +59,7 @@ public class Student {
     @Builder.Default
     @OneToOne
     @JsonBackReference
-    private Address address = null;
+    private Owner owner = null;
 
     public void escape() {
         System.out.println("Your cat got unhappy and has run away from you!");

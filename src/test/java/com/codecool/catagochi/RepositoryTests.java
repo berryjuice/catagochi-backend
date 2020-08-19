@@ -1,8 +1,10 @@
 package com.codecool.catagochi;
 
 import com.codecool.catagochi.entity.Cat;
+import com.codecool.catagochi.entity.Owner;
 import com.codecool.catagochi.model.Age;
 import com.codecool.catagochi.repository.CatRepository;
+import com.codecool.catagochi.repository.OwnerRepository;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
@@ -13,6 +15,8 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
@@ -22,6 +26,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class RepositoryTests {
     @Autowired
     private CatRepository catRepository;
+
+    @Autowired
+    OwnerRepository ownerRepository;
 
     @Autowired
     private TestEntityManager entityManager;
@@ -122,6 +129,34 @@ public class RepositoryTests {
         catRepository.renameMyCatById(1L, "Cat2");
 
         assertThat(catRepository.findMyCatById(1L).getName()).isEqualTo("Cat1");
+    }
+
+    @Test
+    public void OwnerIsPersistedWithCat() {
+        // address
+        Owner owner = Owner.builder()
+                .username("owner")
+                .password("pw")
+                .build();
+
+        // student
+        Cat cat = Cat.builder()
+                .name("Kitty")
+                .owner(owner)
+                .build();
+
+        owner.setCat(cat);
+
+        catRepository.save(cat);
+        //ownerRepository.save(owner);
+
+        //Iterable<Owner> owners = ownerRepository.findAll();
+        List<Cat> cats = catRepository.listAllCat();
+
+        assertThat(cats)
+                .hasSize(1)
+                .allMatch(cat1 -> cat1.getId() > 0L);
+
     }
 
 }
