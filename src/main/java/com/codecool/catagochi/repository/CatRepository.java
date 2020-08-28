@@ -1,6 +1,7 @@
 package com.codecool.catagochi.repository;
 
 import com.codecool.catagochi.entity.Cat;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -11,14 +12,14 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public interface CatRepository extends CrudRepository<Cat, Long> {
+public interface CatRepository extends JpaRepository<Cat, Long> {
 
     @Transactional
-    @Query("SELECT c from Cat c")
+    @Query("SELECT DISTINCT c from Cat c")
     List<Cat> listAllCat();
 
     @Transactional
-    @Query("SELECT c from Cat c WHERE c.adopted=false")
+    @Query("SELECT DISTINCT c from Cat c WHERE c.adopted=false")
     List<Cat> listAllAdoptableCat();
 
     @Query("SELECT c from Cat c WHERE c.adopted=true")

@@ -14,6 +14,7 @@ public class OwnerServiceImpl implements OwnerService {
 
     @Override
     public List<Owner> listAllOwner() {
-        return ownerRepository.listAllOwner();
+        List<Owner> owners = ownerRepository.listAllOwner();
+        return owners;
     }
 }

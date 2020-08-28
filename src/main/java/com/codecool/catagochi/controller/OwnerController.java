@@ -15,10 +15,10 @@ import java.util.List;
 public class OwnerController {
     @Autowired
     @Qualifier("ownerImpl")
-    private OwnerService ownerServiceImpl;
+    private OwnerService ownerService;
 
     @GetMapping("/users")
     public List<Owner> listAllOwner() {
-        return ownerServiceImpl.listAllOwner();
+        return ownerService.listAllOwner();
     }
 }

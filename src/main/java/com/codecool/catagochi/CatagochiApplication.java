@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,23 +34,22 @@ public class CatagochiApplication {
 
     @Bean
     @Profile("production")
-    public CommandLineRunner init() {
-        return args -> {
-
-            Owner user = Owner.builder()
+    @PostConstruct
+    public void init() {
+            Owner user = ownerRepository.saveAndFlush(Owner.builder()
                     .username("user")
                     .password("pw")
-                    .build();
+                    .build());
 
-            ownerRepository.save(user);
-
-            catRepository.save(Cat.builder()
+            Cat jonesy = Cat.builder()
                     .name("Jonesy")
                     .gender(Gender.MALE)
                     .age(Age.ADULT)
-                    .owner(user)
                     .img("https://d2ph5fj80uercy.cloudfront.net/04/cat2972.jpg")
-                    .build());
+                    .owner(user)
+                    .build();
+            catRepository.save(jonesy);
+
 
             catRepository.save(Cat.builder()
                     .name("Schrödinger")
@@ -78,6 +78,5 @@ public class CatagochiApplication {
                     .age(Age.ADULT)
                     .img("https://www.stylist.co.uk/images/app/uploads/2018/10/11175734/kazuky-akayashi-703909-unsplash-256x256.jpg?w=256&h=256&fit=max&auto=format%2Ccompress")
                     .build());
-        };
     }
 }

@@ -1,5 +1,6 @@
 package com.codecool.catagochi.config;
 
+import com.codecool.catagochi.service.CatService;
 import com.codecool.catagochi.service.CatServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -11,13 +12,13 @@ import org.springframework.scheduling.annotation.Scheduled;
 public class CronConfiguration {
 
     @Autowired
-    private CatServiceImpl catServiceImpl;
+    private CatService catService;
 
     /** This method sets the basic properties (hungry, thirsty, litterBoxClean) to their default values */
     @Scheduled(cron="0 0 0 * * *")
     void resetPropertiesAtMidnight() {
-        catServiceImpl.decreaseHappiness();
-        catServiceImpl.setHappinessToHappy();
-        catServiceImpl.resetProperties();
+        catService.decreaseHappiness();
+        catService.setHappinessToHappy();
+        catService.resetProperties();
     }
 }

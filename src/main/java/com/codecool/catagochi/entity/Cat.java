@@ -2,6 +2,7 @@ package com.codecool.catagochi.entity;
 
 import com.codecool.catagochi.model.*;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
@@ -56,10 +57,14 @@ public class Cat {
     @Builder.Default
     private int happiness = 3;
 
-    @Builder.Default
-    @OneToOne
-    @JsonBackReference
-    private Owner owner = null;
+//    @Builder.Default
+//    @OneToOne(targetEntity = Owner.class)
+//    @JsonManagedReference
+//    private Owner owner = null;
+    @ManyToOne(fetch = FetchType.LAZY)
+    //@JoinColumn(name = "id", referencedColumnName = "cat_id")
+    //@JoinTable(name = "cat", joinColumns =@JoinColumn(name = "cat_id"), inverseJoinColumns=@JoinColumn(name="friend_id"))
+    private Owner owner;
 
     public void escape() {
         System.out.println("Your cat got unhappy and has run away from you!");
