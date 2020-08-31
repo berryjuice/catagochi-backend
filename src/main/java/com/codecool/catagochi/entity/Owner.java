@@ -3,6 +3,7 @@ package com.codecool.catagochi.entity;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.*;
 
 import javax.persistence.*;
@@ -27,7 +28,7 @@ public class Owner {
 //    @JsonBackReference
 //    private Cat cat = null;
 
-    @OneToMany(mappedBy = "owner", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "owner", fetch = FetchType.EAGER)
     @Singular
     @JsonBackReference
     private Set<Cat> cats;

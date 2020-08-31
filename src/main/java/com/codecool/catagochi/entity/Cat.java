@@ -3,6 +3,7 @@ package com.codecool.catagochi.entity;
 import com.codecool.catagochi.model.*;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
@@ -61,7 +62,7 @@ public class Cat {
 //    @OneToOne(targetEntity = Owner.class)
 //    @JsonManagedReference
 //    private Owner owner = null;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     //@JoinColumn(name = "id", referencedColumnName = "cat_id")
     //@JoinTable(name = "cat", joinColumns =@JoinColumn(name = "cat_id"), inverseJoinColumns=@JoinColumn(name="friend_id"))
     private Owner owner;

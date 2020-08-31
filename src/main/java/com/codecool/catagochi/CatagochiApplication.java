@@ -47,6 +47,7 @@ public class CatagochiApplication {
                     .age(Age.ADULT)
                     .img("https://d2ph5fj80uercy.cloudfront.net/04/cat2972.jpg")
                     .owner(user)
+                    .adopted(true)
                     .build();
             catRepository.save(jonesy);
 
