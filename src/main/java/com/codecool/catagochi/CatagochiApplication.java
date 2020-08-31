@@ -63,6 +63,8 @@ public class CatagochiApplication {
                     .name("Ópamacs")
                     .gender(Gender.MALE)
                     .age(Age.ADULT)
+                    .owner(user)
+                    .adopted(true)
                     .img("https://d2ph5fj80uercy.cloudfront.net/06/cat2630.jpg")
                     .build());
 

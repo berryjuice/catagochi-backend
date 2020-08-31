@@ -69,7 +69,7 @@ public class CatServiceImpl implements CatService {
 
     @Override
     public Cat renameMyCatById(Long id, String newName) throws Exception {
-        if (newName == null) {
+        if (newName == null || newName.equals("")) {
             return catRepository.findMyCatById(id);
         }
         List<String> names = catRepository.listAllMyCatsName();

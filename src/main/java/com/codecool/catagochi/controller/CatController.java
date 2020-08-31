@@ -8,6 +8,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.web.bind.annotation.*;
 
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 @RestController
@@ -28,6 +29,11 @@ public class CatController {
 //    }
 
     @GetMapping("/")
+    public String message() {
+        return "To see our adoptable cats, please visit /adoptable-cats, ot registrate, or log in.";
+    }
+
+    @GetMapping("/adoptable-cats")
     public List<Cat> listAllAdoptableCats() {
         return catService.listAllAdoptableCat();
     }
@@ -52,7 +58,7 @@ public class CatController {
         return catService.findMyCatById(id);
     }
 
-    @GetMapping("/my-cats/{id}/give-food")
+    @PostMapping("/my-cats/{id}/give-food")
     public Cat giveFood(@PathVariable("id") Long id) {
         return catService.giveFood(id);
     }
